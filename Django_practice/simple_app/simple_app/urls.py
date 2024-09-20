@@ -16,13 +16,13 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-# from webapp import views as s
+from webapp import views as s
 # from webapp_another import views
 from django.conf.urls import include #for the paths
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    # path('x',s.ganesh_prasad_r),
+    path('x',s.testGlobalTemplate),
     # path('y',views.newGaneshPrasadR)
     path('webapp/',include('webapp.urls')),
     path('webapp_another/',include('webapp_another.urls')),
