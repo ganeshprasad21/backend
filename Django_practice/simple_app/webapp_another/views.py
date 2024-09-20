@@ -5,9 +5,7 @@ from django.shortcuts import render
 from django.conf import settings
 
 def newGaneshPrasadR(request):
-    print(settings.TEMPLATES)
-    print(loader.get_template('webapp_another/w_a.html'))
-
-    return render(request, 'webapp_another/w_a.html')
+    template = loader.get_template('w_a.html')
+    return HttpResponse(template.render())
 
 # Create your views here.
