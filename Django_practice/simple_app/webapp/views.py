@@ -3,13 +3,22 @@ from django.http import HttpResponse
 from django.conf import settings
 from django.template import loader
 from django.template.loader import get_template
+import random
 
 def ganesh_prasad_r(request):
     # try:
+        # template = get_template('w_.html')
+        # return HttpResponse(template.render())
+        num = str(random.randint(3,303)) 
+        print(num)
+        context = {'num':num, }
         template = get_template('w_.html')
-        return HttpResponse(template.render())
-    # except Exception as e:
-    #     return HttpResponse(f"Error: {e}")
+        res = template.render(context,request)
+        # print(HttpResponse(res))
+        return HttpResponse(res)
+        # # return template.render()
+
+
     
 def testGlobalTemplate(request):
     return get_template('w_.html').render()
