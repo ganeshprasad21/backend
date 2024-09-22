@@ -1,5 +1,5 @@
-
 <!DOCTYPE html>
+{% load webapp_tags %}
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -23,6 +23,7 @@
 </style>
 </head>
 <body>
+    <h1> {% get_the_date %}</h1>
     {% block my_first_block %}
     {% endblock %}
 </body>
