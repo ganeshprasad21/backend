@@ -1,32 +1,9 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-<style>
-    h1{
-        /* display: flexbox; */
-        background-color:aliceblue;
-    }
-    span{
-        font-weight: bolder;
-        background-color: beige;
-        font-style: oblique;
-    }
-    div{
-        font-weight: bolder;
-        background-color:bisque
-
-    }
-</style>
-</head>
-<body>
-    <h1>This is under webapp and x, here is a random number <span>{{ num }}</span> </h1>
-    {% for key in myDict %}
-    <div >
-        <a href=""> {{ key }}</a><br>
-    </div>
-    {% endfor %}
-</body>
-</html>
+{% extends "master.html" %}
+{% block my_first_block %}
+<h1>This is under webapp and x, here is a random number <span>{{ num }}</span> </h1>
+{% for key in myDict %}
+<div >
+    <a href=""> {{ key }}</a><br>
+</div>
+{% endfor %}
+{% endblock %}
