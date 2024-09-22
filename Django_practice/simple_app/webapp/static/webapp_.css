@@ -1,0 +1,15 @@
+
+    h1{
+        /* display: flexbox; */
+        background-color:aliceblue;
+    }
+    span{
+        font-weight: bolder;
+        background-color: beige;
+        font-style: oblique;
+    }
+    div{
+        font-weight: bolder;
+        background-color:bisque
+
+    }
