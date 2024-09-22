@@ -1,2 +1,3 @@
 # backend
-a repo for all the coursework done from devs nest and/or other if any
+Django practice -> sample app has all the django basics
+django practice next app has REST
