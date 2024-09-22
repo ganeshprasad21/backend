@@ -14,9 +14,19 @@
         background-color: beige;
         font-style: oblique;
     }
+    div{
+        font-weight: bolder;
+        background-color:bisque
+
+    }
 </style>
 </head>
 <body>
     <h1>This is under webapp and x, here is a random number <span>{{ num }}</span> </h1>
+    {% for key in myDict %}
+    <div >
+        <a href=""> {{ key }}</a><br>
+    </div>
+    {% endfor %}
 </body>
 </html>
