@@ -1,0 +1,16 @@
+{
+  "name": "codecept_yt",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "codeceptjs": "^3.5.14",
+    "playwright": "^1.41.2",
+    "puppeteer": "^22.1.0"
+  }
+}
